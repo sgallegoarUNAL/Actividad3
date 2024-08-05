@@ -1,4 +1,4 @@
-package tercertaller.t3ejerciciopn19;
+package tercertaller.ejerciciopn19;
 
 public class Triangulo_Eq {
     double lado;
