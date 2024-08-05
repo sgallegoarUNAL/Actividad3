@@ -1,0 +1,80 @@
+package tercertaller.ejerciciopn23;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class EjercicioPN23 {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setSize(400, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
+
+        JLabel labelA = new JLabel("Ingrese el valor de A:");
+        labelA.setBounds(20, 20, 200, 30);
+        frame.add(labelA);
+
+        JTextField textFieldA = new JTextField();
+        textFieldA.setBounds(220, 20, 150, 30);
+        frame.add(textFieldA);
+
+        JLabel labelB = new JLabel("Ingrese el valor de B:");
+        labelB.setBounds(20, 70, 200, 30);
+        frame.add(labelB);
+
+        JTextField textFieldB = new JTextField();
+        textFieldB.setBounds(220, 70, 150, 30);
+        frame.add(textFieldB);
+
+        JLabel labelC = new JLabel("Ingrese el valor de C:");
+        labelC.setBounds(20, 120, 200, 30);
+        frame.add(labelC);
+
+        JTextField textFieldC = new JTextField();
+        textFieldC.setBounds(220, 120, 150, 30);
+        frame.add(textFieldC);
+
+        JButton calcularButton = new JButton("Calcular");
+        calcularButton.setBounds(150, 170, 100, 30);
+        frame.add(calcularButton);
+
+        JTextArea resultadoArea = new JTextArea();
+        resultadoArea.setEditable(false);
+        
+        JScrollPane scrollPane = new JScrollPane(resultadoArea);
+        scrollPane.setBounds(20, 210, 350, 50);
+        frame.add(scrollPane);
+
+        calcularButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    double A = Double.parseDouble(textFieldA.getText());
+                    double B = Double.parseDouble(textFieldB.getText());
+                    double C = Double.parseDouble(textFieldC.getText());
+
+                    double discriminante = (B * B) - (4 * A * C);
+                    String resultado;
+
+                    if (discriminante > 0) {
+                        double x1 = (-B + Math.sqrt(discriminante)) / (2 * A);
+                        double x2 = (-B - Math.sqrt(discriminante)) / (2 * A);
+                        resultado = "Las soluciones son:\n" + "x1 = " + x1 + "\nx2 = " + x2;
+                    } else if (discriminante == 0) {
+                        double x = -B / (2 * A);
+                        resultado = "La solución es:\n" + "x = " + x;
+                    } else {
+                        resultado = "La ecuación no tiene soluciones reales.";
+                    }
+
+                    resultadoArea.setText(resultado);
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(frame, "Por favor, ingrese datos válidos.", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
+
+        frame.setVisible(true);
+    }
+}
