@@ -1,0 +1,76 @@
+package tercertaller.ejerciciopn22;
+
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class EjercicioPN22 {
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+        frame.setSize(400, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
+
+        JLabel labelNombre = new JLabel("Nombre del Empleado:");
+        labelNombre.setBounds(20, 20, 150, 30);
+        frame.add(labelNombre);
+
+        JTextField textFieldNombre = new JTextField();
+        textFieldNombre.setBounds(180, 20, 200, 30);
+        frame.add(textFieldNombre);
+
+        JLabel labelSalario = new JLabel("Salario por Hora:");
+        labelSalario.setBounds(20, 70, 150, 30);
+        frame.add(labelSalario);
+
+        JTextField textFieldSalario = new JTextField();
+        textFieldSalario.setBounds(180, 70, 200, 30);
+        frame.add(textFieldSalario);
+
+        JLabel labelHoras = new JLabel("Horas Trabajadas:");
+        labelHoras.setBounds(20, 120, 150, 30);
+        frame.add(labelHoras);
+
+        JTextField textFieldHoras = new JTextField();
+        textFieldHoras.setBounds(180, 120, 200, 30);
+        frame.add(textFieldHoras);
+
+        JButton calcularButton = new JButton("Calcular");
+        calcularButton.setBounds(150, 170, 100, 30);
+        frame.add(calcularButton);
+
+        JTextArea resultadoArea = new JTextArea();
+        resultadoArea.setEditable(false);
+        
+        JScrollPane scrollPane = new JScrollPane(resultadoArea);
+        scrollPane.setBounds(20, 210, 360, 50);  // Ajustar el tamaño del JScrollPane
+        frame.add(scrollPane);
+
+        calcularButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String nombre = textFieldNombre.getText();
+                double salario;
+                int horas;
+
+                try {
+                    salario = Double.parseDouble(textFieldSalario.getText());
+                    horas = Integer.parseInt(textFieldHoras.getText());
+
+                    double salarioMensual = salario * horas;
+
+                    String resultado = "Nombre: " + nombre + "\n";
+                    if (salarioMensual > 450000) {
+                        resultado += "Salario: $" + salarioMensual;
+                    }
+                    resultadoArea.setText(resultado);
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(frame, "Por favor, ingrese datos válidos.", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
+
+        frame.setVisible(true);
+    }
+}
