@@ -1,32 +1,86 @@
-package tercertaller.t3ejerciciopn18;
+package tercertaller.ejerciciopn18;
 
-import java.util.Scanner;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
-public class T3EjercicioPN18 {
+public class EjercicioPN18 {
     public static void main(String[] args) {
-        int codigo;
-        String nombre;
-        double horas_trabajo, razon_hora, retencion, s_bruto, s_neto, p_retencion;
+        // Crear el marco de la ventana
+        JFrame frame = new JFrame();
+        frame.setSize(400, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(new GridLayout(7, 2));
+
+        JLabel lblCodigo = new JLabel("Código del empleado:");
+        JTextField txtCodigo = new JTextField();
         
-        Scanner entrada = new Scanner(System.in);
+        JLabel lblNombre = new JLabel("Nombre del empleado:");
+        JTextField txtNombre = new JTextField();
         
-        System.out.println("Ingrese el codigo del empleado: ");
-        codigo = entrada.nextInt();
-        System.out.println("Ingrese el nombre del empleado: ");
-        nombre = entrada.next();
-        System.out.println("Ingrese la razon por hora del empleado: ");
-        razon_hora = entrada.nextDouble();
-        System.out.println("Ingrese el numero de horas trabajadas del empleado: ");
-        horas_trabajo = entrada.nextDouble();
-        System.out.println("Ingrese el porcentaje de retención: ");
-        p_retencion = entrada.nextDouble();
+        JLabel lblRazonHora = new JLabel("Razón por hora:");
+        JTextField txtRazonHora = new JTextField();
         
-        s_bruto = horas_trabajo * razon_hora;
-        retencion = s_bruto * (p_retencion/100);
-        s_neto = s_bruto - retencion;
-        System.out.println("Codigo del empleado: " + codigo);
-        System.out.println("Nombre del empleado: " + nombre);
-        System.out.println("Salario bruto: " + s_bruto);
-        System.out.println("Salario neto: " + s_neto);
+        JLabel lblHorasTrabajo = new JLabel("Número de horas trabajadas:");
+        JTextField txtHorasTrabajo = new JTextField();
+        
+        JLabel lblPorcentajeRetencion = new JLabel("Porcentaje de retención:");
+        JTextField txtPorcentajeRetencion = new JTextField();
+        
+        JButton btnCalcular = new JButton("Calcular");
+        JTextArea txtResultados = new JTextArea();
+        txtResultados.setEditable(false);
+
+        frame.add(lblCodigo);
+        frame.add(txtCodigo);
+        frame.add(lblNombre);
+        frame.add(txtNombre);
+        frame.add(lblRazonHora);
+        frame.add(txtRazonHora);
+        frame.add(lblHorasTrabajo);
+        frame.add(txtHorasTrabajo);
+        frame.add(lblPorcentajeRetencion);
+        frame.add(txtPorcentajeRetencion);
+        frame.add(new JLabel());
+        frame.add(btnCalcular);
+        frame.add(new JLabel("Resultados:"));
+        frame.add(new JScrollPane(txtResultados));
+
+        btnCalcular.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    int codigo = Integer.parseInt(txtCodigo.getText());
+                    String nombre = txtNombre.getText();
+                    double razonHora = Double.parseDouble(txtRazonHora.getText());
+                    double horasTrabajo = Double.parseDouble(txtHorasTrabajo.getText());
+                    double porcentajeRetencion = Double.parseDouble(txtPorcentajeRetencion.getText());
+
+                    double salarioBruto = horasTrabajo * razonHora;
+                    double retencion = salarioBruto * (porcentajeRetencion / 100);
+                    double salarioNeto = salarioBruto - retencion;
+
+                    String resultados = String.format(
+                        "Código del empleado: %d\n" +
+                        "Nombre del empleado: %s\n" +
+                        "Salario bruto: %.2f\n" +
+                        "Salario neto: %.2f",
+                        codigo, nombre, salarioBruto, salarioNeto
+                    );
+                    txtResultados.setText(resultados);
+
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(frame, "Por favor, ingrese valores válidos.", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
+        frame.setVisible(true);
     }
-}
+}  
