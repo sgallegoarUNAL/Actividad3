@@ -1,23 +1,53 @@
-package tercertaller.t3ejerciciopn19;
+package tercertaller.ejerciciopn19;
 
-import java.util.Scanner;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class T3EjercicioPN19 {
-
+public class EjercicioPN19 {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        double lado,area,altura,perimetro;
-        System.out.println("Ingrese el valor del lado del triangulo equilatero");
-        lado = entrada.nextDouble();
-        
-        Triangulo_Eq triangulo = new Triangulo_Eq(lado);
-        
-        area = triangulo.calcularArea();
-        perimetro = triangulo.calcularPerimetro();
-        altura = triangulo.calcularAltura();
-        
-        System.out.println("El area del triangulo equilatero es: " + area);
-        System.out.println("El perimetro del triangulo equilatero es: " + perimetro);
-        System.out.println("La altura del triangulo equilatero es: " + altura);
+        JFrame frame = new JFrame();
+        frame.setSize(400, 300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
+
+        JLabel ladoLabel = new JLabel("Ingrese el valor del lado:");
+        ladoLabel.setBounds(20, 20, 200, 30);
+        frame.add(ladoLabel);
+
+        JTextField ladoField = new JTextField();
+        ladoField.setBounds(220, 20, 100, 30);
+        frame.add(ladoField);
+
+        JButton calcularButton = new JButton("Calcular");
+        calcularButton.setBounds(150, 70, 100, 30);
+        frame.add(calcularButton);
+
+        JTextArea resultadoArea = new JTextArea();
+        resultadoArea.setBounds(20, 110, 350, 130);
+        resultadoArea.setEditable(false);
+        frame.add(resultadoArea);
+
+        calcularButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    double lado = Double.parseDouble(ladoField.getText());
+                    Triangulo_Eq triangulo = new Triangulo_Eq(lado);
+                    double area = triangulo.calcularArea();
+                    double perimetro = triangulo.calcularPerimetro();
+                    double altura = triangulo.calcularAltura();
+
+                    String resultado = "El área del triángulo equilátero es: " + area + "\n" +
+                                      "El perímetro del triángulo equilátero es: " + perimetro + "\n" +
+                                      "La altura del triángulo equilátero es: " + altura;
+                    resultadoArea.setText(resultado);
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(frame, "Por favor, ingrese un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
+
+        frame.setVisible(true);
     }
 }
