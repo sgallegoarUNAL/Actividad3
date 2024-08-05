@@ -1,0 +1,692 @@
+package tercertaller.pruebafiguras;
+
+public class VentanaPr extends javax.swing.JFrame {
+
+    public VentanaPr() {
+        initComponents();
+    }
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        txtCRadio = new javax.swing.JTextField();
+        txtCArea = new javax.swing.JTextField();
+        txtCPerimetro = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        btnArea = new javax.swing.JButton();
+        btnPerimetro = new javax.swing.JButton();
+        btnBorrar = new javax.swing.JButton();
+        btnCuPerimetro = new javax.swing.JButton();
+        btnCuBorrar = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        txtCuLado = new javax.swing.JTextField();
+        txtCuArea = new javax.swing.JTextField();
+        txtCuPerimetro = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        btnCuArea = new javax.swing.JButton();
+        btnRPerimetro = new javax.swing.JButton();
+        btnRBorrar = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        txtRBase = new javax.swing.JTextField();
+        txtRArea = new javax.swing.JTextField();
+        txtRPerimetro = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        btnRArea = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        txtRAltura = new javax.swing.JTextField();
+        btnTRPerimetro = new javax.swing.JButton();
+        btnTRBorrar = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        txtTRBase = new javax.swing.JTextField();
+        txtTRArea = new javax.swing.JTextField();
+        txtTRPerimetro = new javax.swing.JTextField();
+        jLabel21 = new javax.swing.JLabel();
+        btnTRArea = new javax.swing.JButton();
+        txtTRAltura = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        txtTRHipotenusa = new javax.swing.JTextField();
+        btnTRHipotenusa = new javax.swing.JButton();
+        btnTRTipotriangulo = new javax.swing.JButton();
+        txtTRTipotriangulo = new javax.swing.JTextField();
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Radio");
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Area");
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Perimetro");
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel4.setText("Circulo");
+
+        btnArea.setText("Area");
+        btnArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAreaActionPerformed(evt);
+            }
+        });
+
+        btnPerimetro.setText("Perimetro");
+        btnPerimetro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPerimetroActionPerformed(evt);
+            }
+        });
+
+        btnBorrar.setText("Borrar");
+        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarActionPerformed(evt);
+            }
+        });
+
+        btnCuPerimetro.setText("Perimetro");
+        btnCuPerimetro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCuPerimetroActionPerformed(evt);
+            }
+        });
+
+        btnCuBorrar.setText("Borrar");
+        btnCuBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCuBorrarActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Lado");
+        jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Area");
+        jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Perimetro");
+        jLabel7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        txtCuPerimetro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCuPerimetroActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("Cuadrado");
+
+        btnCuArea.setText("Area");
+        btnCuArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCuAreaActionPerformed(evt);
+            }
+        });
+
+        btnRPerimetro.setText("Perimetro");
+        btnRPerimetro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRPerimetroActionPerformed(evt);
+            }
+        });
+
+        btnRBorrar.setText("Borrar");
+        btnRBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRBorrarActionPerformed(evt);
+            }
+        });
+
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("Base");
+        jLabel13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("Area");
+        jLabel14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel15.setText("Perimetro");
+        jLabel15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel16.setText("Rectangulo");
+
+        btnRArea.setText("Area");
+        btnRArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRAreaActionPerformed(evt);
+            }
+        });
+
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel17.setText("Altura");
+        jLabel17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        btnTRPerimetro.setText("Perimetro");
+        btnTRPerimetro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTRPerimetroActionPerformed(evt);
+            }
+        });
+
+        btnTRBorrar.setText("Borrar");
+        btnTRBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTRBorrarActionPerformed(evt);
+            }
+        });
+
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel18.setText("Base");
+        jLabel18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText("Area");
+        jLabel19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel20.setText("Perimetro");
+        jLabel20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        txtTRPerimetro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTRPerimetroActionPerformed(evt);
+            }
+        });
+
+        jLabel21.setText("Triangulo Rectangulo");
+
+        btnTRArea.setText("Area");
+        btnTRArea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTRAreaActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setText("Altura");
+
+        jLabel10.setText("Hipotenusa");
+
+        btnTRHipotenusa.setText("Hipotenusa");
+        btnTRHipotenusa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTRHipotenusaActionPerformed(evt);
+            }
+        });
+
+        btnTRTipotriangulo.setText("Triangulo");
+        btnTRTipotriangulo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTRTipotrianguloActionPerformed(evt);
+            }
+        });
+
+        txtTRTipotriangulo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTRTipotrianguloActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(27, 27, 27)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel3)
+                                .addComponent(jLabel2)
+                                .addComponent(jLabel1))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(txtCRadio)
+                                .addComponent(txtCArea)
+                                .addComponent(txtCPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(79, 79, 79)
+                            .addComponent(jLabel4))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(btnArea)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btnPerimetro)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btnBorrar))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(79, 79, 79)
+                            .addComponent(jLabel16))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(btnRArea)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btnRPerimetro)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(btnRBorrar)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel13)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtRBase, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel15)
+                                    .addComponent(jLabel14))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(txtRArea)
+                                        .addComponent(txtRPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel17)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtRAltura, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel5))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtCuLado)
+                            .addComponent(txtCuArea)
+                            .addComponent(txtCuPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(79, 79, 79)
+                        .addComponent(jLabel8))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnCuArea)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCuPerimetro)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnCuBorrar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(jLabel20)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtTRPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(27, 27, 27)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(jLabel19)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtTRArea, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(jLabel18)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtTRBase, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel9)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtTRAltura, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel10)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtTRHipotenusa, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(txtTRTipotriangulo))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(79, 79, 79)
+                        .addComponent(jLabel21))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnTRArea, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnTRPerimetro)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnTRBorrar)))
+                .addGap(69, 69, 69))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnTRHipotenusa, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnTRTipotriangulo)
+                .addGap(82, 82, 82))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(txtCRadio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(txtCArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(txtCPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnArea)
+                            .addComponent(btnPerimetro)
+                            .addComponent(btnBorrar)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5)
+                            .addComponent(txtCuLado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel6)
+                            .addComponent(txtCuArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(txtCuPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnCuArea)
+                            .addComponent(btnCuPerimetro)
+                            .addComponent(btnCuBorrar))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(16, 16, 16)
+                        .addComponent(jLabel16)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel13)
+                            .addComponent(txtRBase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel17)
+                            .addComponent(txtRAltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel14)
+                            .addComponent(txtRArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel15)
+                            .addComponent(txtRPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnRArea)
+                            .addComponent(btnRPerimetro)
+                            .addComponent(btnRBorrar)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel18)
+                            .addComponent(txtTRBase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtTRAltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel9))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel19)
+                            .addComponent(txtTRArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel10)
+                            .addComponent(txtTRHipotenusa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(7, 7, 7)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel20)
+                            .addComponent(txtTRPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtTRTipotriangulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnTRBorrar)
+                            .addComponent(btnTRPerimetro)
+                            .addComponent(btnTRArea))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnTRHipotenusa)
+                    .addComponent(btnTRTipotriangulo))
+                .addContainerGap(69, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void btnAreaActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        
+        double areaC;
+        int radio = Integer.parseInt(txtCRadio.getText());
+        Circulo figura1 = new Circulo(radio);
+        areaC = figura1.calcularArea();
+        txtCArea.setText(String.valueOf(areaC));
+    }                                       
+
+    private void btnPerimetroActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        double perimetroC;
+        int radio = Integer.parseInt(txtCRadio.getText());
+        Circulo figura1 = new Circulo(radio);
+        perimetroC = figura1.calcularPerimetro();
+        txtCPerimetro.setText(String.valueOf(perimetroC));
+    }                                            
+
+    private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        txtCRadio.setText(String.valueOf(""));
+        txtCArea.setText(String.valueOf(""));
+        txtCPerimetro.setText(String.valueOf(""));
+    }                                         
+
+    private void btnCuPerimetroActionPerformed(java.awt.event.ActionEvent evt) {                                               
+        double perimetroCu;
+        int lado = Integer.parseInt(txtCuLado.getText());
+        Cuadrado figura1 = new Cuadrado(lado);
+        perimetroCu = figura1.calcularPerimetro();
+        txtCuPerimetro.setText(String.valueOf(perimetroCu));
+    }                                              
+
+    private void btnCuBorrarActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        txtCuLado.setText(String.valueOf(""));
+        txtCuArea.setText(String.valueOf(""));
+        txtCuPerimetro.setText(String.valueOf(""));
+    }                                           
+
+    private void btnCuAreaActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        double areaCu;
+        int lado = Integer.parseInt(txtCuLado.getText());
+        Cuadrado figura1 = new Cuadrado(lado);
+        areaCu = figura1.calcularArea();
+        txtCuArea.setText(String.valueOf(areaCu));
+    }                                         
+
+    private void btnRPerimetroActionPerformed(java.awt.event.ActionEvent evt) {                                              
+        double perimetroR;
+        int baseR = Integer.parseInt(txtRBase.getText());
+        int alturaR = Integer.parseInt(txtRAltura.getText());
+        Rectangulo figura1 = new Rectangulo(baseR,alturaR);
+        perimetroR = figura1.calcularPerimetro();
+        txtRPerimetro.setText(String.valueOf(perimetroR));
+    }                                             
+
+    private void btnRBorrarActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        txtRBase.setText(String.valueOf(""));
+        txtRAltura.setText(String.valueOf(""));
+        txtRArea.setText(String.valueOf(""));
+        txtRPerimetro.setText(String.valueOf(""));
+    }                                          
+
+    private void btnRAreaActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        double areaR;
+        int baseR = Integer.parseInt(txtRBase.getText());
+        int alturaR = Integer.parseInt(txtRAltura.getText());
+        Rectangulo figura1 = new Rectangulo(baseR,alturaR);
+        areaR = figura1.calcularArea();
+        txtRArea.setText(String.valueOf(areaR));    }                                        
+
+    private void btnTRPerimetroActionPerformed(java.awt.event.ActionEvent evt) {                                               
+        double perimetroTR;
+        int baseTR = Integer.parseInt(txtTRBase.getText());
+        int alturaTR = Integer.parseInt(txtTRAltura.getText());
+        TrianguloRectangulo figura1 = new TrianguloRectangulo(baseTR,alturaTR);
+        perimetroTR = figura1.calcularPerimetro();
+        txtTRPerimetro.setText(String.valueOf(perimetroTR));
+    }                                              
+
+    private void btnTRBorrarActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        txtTRBase.setText(String.valueOf(""));
+        txtTRAltura.setText(String.valueOf(""));
+        txtTRArea.setText(String.valueOf(""));
+        txtTRPerimetro.setText(String.valueOf(""));
+        txtTRHipotenusa.setText(String.valueOf(""));
+    }                                           
+
+    private void btnTRAreaActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        double areaTR;
+        int baseTR = Integer.parseInt(txtTRBase.getText());
+        int alturaTR = Integer.parseInt(txtTRAltura.getText());
+        TrianguloRectangulo figura1 = new TrianguloRectangulo(baseTR,alturaTR);
+        areaTR = figura1.calcularArea();
+        txtTRArea.setText(String.valueOf(areaTR));
+    }                                         
+
+    private void txtCuPerimetroActionPerformed(java.awt.event.ActionEvent evt) {                                               
+        // TODO add your handling code here:
+    }                                              
+
+    private void txtTRPerimetroActionPerformed(java.awt.event.ActionEvent evt) {                                               
+        // TODO add your handling code here:
+    }                                              
+
+    private void btnTRHipotenusaActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        double hipotenusaTR;
+        int baseTR = Integer.parseInt(txtTRBase.getText());
+        int alturaTR = Integer.parseInt(txtTRAltura.getText());
+        TrianguloRectangulo figura1 = new TrianguloRectangulo(baseTR,alturaTR);
+        hipotenusaTR = figura1.calcularArea();
+        txtTRHipotenusa.setText(String.valueOf(hipotenusaTR));
+    }                                               
+
+    private void btnTRTipotrianguloActionPerformed(java.awt.event.ActionEvent evt) {                                                   
+        int baseTR = Integer.parseInt(txtTRBase.getText());
+        int alturaTR = Integer.parseInt(txtTRAltura.getText());
+        TrianguloRectangulo figura1 = new TrianguloRectangulo(baseTR,alturaTR);
+        if ((baseTR == alturaTR) && (baseTR == figura1.calcularHipotenusa()) && (alturaTR == figura1.calcularHipotenusa()))
+    txtTRTipotriangulo.setText("Equilátero");
+    else if ((baseTR != alturaTR) && (baseTR != figura1.calcularHipotenusa()) && (alturaTR != figura1.calcularHipotenusa()))
+    txtTRTipotriangulo.setText("Escaleno");
+    else
+    txtTRTipotriangulo.setText("Isósceles");
+    }                                                  
+
+    private void txtTRTipotrianguloActionPerformed(java.awt.event.ActionEvent evt) {                                                   
+        // TODO add your handling code here:
+    }                                                  
+
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(VentanaPr.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(VentanaPr.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(VentanaPr.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(VentanaPr.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new VentanaPr().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton btnArea;
+    private javax.swing.JButton btnBorrar;
+    private javax.swing.JButton btnCuArea;
+    private javax.swing.JButton btnCuBorrar;
+    private javax.swing.JButton btnCuPerimetro;
+    private javax.swing.JButton btnPerimetro;
+    private javax.swing.JButton btnRArea;
+    private javax.swing.JButton btnRBorrar;
+    private javax.swing.JButton btnRPerimetro;
+    private javax.swing.JButton btnTRArea;
+    private javax.swing.JButton btnTRBorrar;
+    private javax.swing.JButton btnTRHipotenusa;
+    private javax.swing.JButton btnTRPerimetro;
+    private javax.swing.JButton btnTRTipotriangulo;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField txtCArea;
+    private javax.swing.JTextField txtCPerimetro;
+    private javax.swing.JTextField txtCRadio;
+    private javax.swing.JTextField txtCuArea;
+    private javax.swing.JTextField txtCuLado;
+    private javax.swing.JTextField txtCuPerimetro;
+    private javax.swing.JTextField txtRAltura;
+    private javax.swing.JTextField txtRArea;
+    private javax.swing.JTextField txtRBase;
+    private javax.swing.JTextField txtRPerimetro;
+    private javax.swing.JTextField txtTRAltura;
+    private javax.swing.JTextField txtTRArea;
+    private javax.swing.JTextField txtTRBase;
+    private javax.swing.JTextField txtTRHipotenusa;
+    private javax.swing.JTextField txtTRPerimetro;
+    private javax.swing.JTextField txtTRTipotriangulo;
+    // End of variables declaration                   
+}
